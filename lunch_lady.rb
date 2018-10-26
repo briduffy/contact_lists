@@ -91,7 +91,7 @@ class LunchLady
 
   def repeat_order
     puts "You've ordered..."
-    puts buyer.dishes.map(&:dish_name).join(',')
+    puts buyer.dishes.map(&:dish_name).join(', ')
   end
 
   def total_order
@@ -100,7 +100,6 @@ class LunchLady
 
   def process_buyer
     menu
-    pick_main_dish
     pick_side_dish
     pick_side_dish
     repeat_order
