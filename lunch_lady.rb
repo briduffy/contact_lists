@@ -100,8 +100,7 @@ class LunchLady
 
   def process_buyer
     menu
-    pick_side_dish
-    pick_side_dish
+    2.times {pick_side_dish}
     repeat_order
     total_order
   end
